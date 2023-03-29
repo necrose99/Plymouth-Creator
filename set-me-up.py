@@ -78,7 +78,7 @@ def guess_version(projectdir):
 
 def main(projectdir):
     if not os.path.exists(projectdir):
-        print "No project not found at %s" % projectdir
+        print("No project not found at %s" % projectdir)
         return
     package_data = find_package_data(projectdir)
     context = {
