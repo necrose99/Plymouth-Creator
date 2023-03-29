@@ -1,5 +1,3 @@
-from builtins import str
-from builtins import object
 import os
 import glob
 import tkinter, tkinter.filedialog
@@ -25,7 +23,7 @@ scaleImages = None
 root = tkinter.Tk()
 root.withdraw()
 
-class Handler(object):
+class Handler:
   def on_selectVideoButton_clicked(self, button):
     global videoInputFile
     global setVideoInputFile
